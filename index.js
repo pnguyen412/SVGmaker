@@ -1,4 +1,4 @@
-const filesystem = require('graceful-fs')
+const filesystem = require('fs')
 const inquirer = require('inquirer');
 const {Circle, Square, Triangle} = require("./lib/shapes");
 // Imports the fs, inquirer, Circle, Square, and Triangle objects.
@@ -23,7 +23,7 @@ class Svg{
     
 }
 
-// Inquirer prompts for TEXT, TEXT COLOR, SHAPE COLOR, and Pixel Image.
+// Inquirer prompts for TEXT, TEXT COLOR, SHAPE COLOR, and Shape.
 const questions = [
     {
         type: "input",
